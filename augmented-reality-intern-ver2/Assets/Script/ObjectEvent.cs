@@ -16,10 +16,17 @@ public class ObjectEvent : MonoBehaviour
     }
 
     void Update(){
-        print(transform.position);
+        // print(transform.position);
+        print (arutalaLogo.transform.rotation);
     }
 
     public void targetDetected(){
         rbArutalaLogo.AddTorque(TorqueObject, ForceMode.Impulse);
+        Instantiate(particleStart, transform.position, Quaternion.identity);
+    }
+
+    public void targetNotDetected(){
+        arutalaLogo.transform.rotation = Quaternion.Euler(0,0,0);
+
     }
 }
