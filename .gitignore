@@ -59,3 +59,5 @@ sysinfo.txt
 crashlytics-build.properties
 
 *.tgz
+augmented-reality-intern-ver2/Library/ArtifactDB
+augmented-reality-intern-ver2/Library/PackageCache/com.ptc.vuforia.engine@c5e5327d3f1d-1635979565000/Vuforia/Plugins/iOS/VuforiaEngine.framework/VuforiaEngine
