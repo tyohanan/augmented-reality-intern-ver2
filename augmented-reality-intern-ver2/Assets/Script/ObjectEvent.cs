@@ -29,6 +29,7 @@ public class ObjectEvent : MonoBehaviour
         Instantiate(particleStart, transform.position, Quaternion.identity);
         bgmGame.Play();
         animLogo.SetBool("onStart", true);
+        arutalaLogo.transform.Rotate(0,360,0);
     }
 
     public void targetNotDetected(){
