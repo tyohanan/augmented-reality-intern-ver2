@@ -123,6 +123,36 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &127398811
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 127398812}
+  m_Layer: 0
+  m_Name: ParticleInstantiatePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &127398812
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127398811}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1466069617}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!43 &442273280
 Mesh:
   m_ObjectHideFlags: 0
@@ -830,6 +860,7 @@ Transform:
   m_Children:
   - {fileID: 1413993498}
   - {fileID: 1999267983}
+  - {fileID: 127398812}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -846,7 +877,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arutalaLogo: {fileID: 663252923}
-  particleStart: {fileID: 2244481702172863444, guid: 62b0a9a466af63248995aeacdb69b5fa, type: 3}
+  particleObject: {fileID: 6015039377982032166, guid: 62b0a9a466af63248995aeacdb69b5fa, type: 3}
+  particlePosition: {fileID: 127398811}
   bgmGame: {fileID: 1413993499}
   TorqueObject: {x: 0, y: 5, z: 0}
 --- !u!1001 &1552592470
@@ -998,7 +1030,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TorqueObject: {x: 0, y: 5, z: 0}
-  speed: 1
+  rotatingSpeed: 5
+  scalingSpeed: 0.5
 --- !u!54 &1999267985
 Rigidbody:
   m_ObjectHideFlags: 0
