@@ -1,0 +1,83 @@
+{
+    "name": "TouchControl",
+    "maps": [
+        {
+            "name": "Touch",
+            "id": "6853da8c-df5c-49b8-8550-b34a20f8519c",
+            "actions": [
+                {
+                    "name": "PrimaryFingerPosition",
+                    "type": "Value",
+                    "id": "8b4bb383-435f-428f-9704-087797af7862",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "SecondaryFingerPosition",
+                    "type": "Value",
+                    "id": "08135395-5ed0-4c4c-a76e-d0640467bfcf",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "SecondaryTouchContact",
+                    "type": "Button",
+                    "id": "052a604c-3679-4a0b-aca4-336131a814d9",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press"
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "d18326a4-b553-4a31-9e4e-b5df1744e6e9",
+                    "path": "<Touchscreen>/touch0/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Android",
+                    "action": "PrimaryFingerPosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "028d076c-1d67-4275-919a-2b11e20a1ea7",
+                    "path": "<Touchscreen>/touch1/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Android",
+                    "action": "SecondaryFingerPosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b0242554-cae4-4eb5-a30a-8b42c7dfb5e6",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Android",
+                    "action": "SecondaryTouchContact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Android",
+            "bindingGroup": "Android",
+            "devices": [
+                {
+                    "devicePath": "<Touchscreen>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
