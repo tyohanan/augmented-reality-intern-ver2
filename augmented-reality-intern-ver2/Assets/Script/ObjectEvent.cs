@@ -10,12 +10,13 @@ public class ObjectEvent : MonoBehaviour
     public AudioSource bgmGame;
 
     public Vector3 TorqueObject = new Vector3 (0,0,0);
-
     private Rigidbody rbArutalaLogo;
+    private Animator animLogo;
 
 
     void Start(){
         rbArutalaLogo = arutalaLogo.GetComponent<Rigidbody>();
+        animLogo = arutalaLogo.GetComponent<Animator>();
 
     }
 
@@ -25,12 +26,13 @@ public class ObjectEvent : MonoBehaviour
     }
 
     public void targetDetected(){
-        rbArutalaLogo.AddTorque(TorqueObject, ForceMode.Impulse);
         Instantiate(particleStart, transform.position, Quaternion.identity);
         bgmGame.Play();
+        animLogo.SetBool("onStart", true);
     }
 
     public void targetNotDetected(){
         bgmGame.Stop();
+        animLogo.SetBool("onStart", false);
     }
 }
